@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <div class="heart" aria-hidden="true">♥</div>
+    <h1>Love Calculator</h1>
+    <p class="intro">Enter two names and see what the calculator says!</p>
+
+    <form id="love-form">
+      <label for="name-one">Your name</label>
+      <input id="name-one" type="text" placeholder="e.g. Alex" autocomplete="name" required>
+
+      <label for="name-two">Their name</label>
+      <input id="name-two" type="text" placeholder="e.g. Sam" required>
+
+      <button type="submit">Calculate ♥</button>
+    </form>
+
+    <p id="result" class="result" aria-live="polite">Your result will appear here.</p>
+    <p class="disclaimer">Just for fun — this score isn't a real measure of compatibility.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
